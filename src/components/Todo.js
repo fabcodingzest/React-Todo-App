@@ -55,7 +55,7 @@ export default function Todo ({ todo,todos, setTodos }) {
 
   return (
     <div className="todo">
-      <div className="non-edit">
+      <div className="non-edit" >
         <p style={{ textDecoration: `${todo.completed ? 'line-through' : ''}` }}>
           {todo.task}
         </p>
@@ -67,7 +67,7 @@ export default function Todo ({ todo,todos, setTodos }) {
       </div>
       <div className="edit" style={{display: `${todo.editing ? 'flex': 'none'}`}}>
         <form action="" onSubmit={handleSubmit} name="editForm">
-          <input onChange={handleInputChange} type="text" className="edit-input" defaultValue={todo.task} name="taskInput"/>
+          <input onChange={handleInputChange} type="text" className="edit-input" defaultValue={todo.task} name="taskInput" maxLength="60"/>
           <button type="submit" className="save-btn" name="save">Save</button>
         </form>
       </div>
