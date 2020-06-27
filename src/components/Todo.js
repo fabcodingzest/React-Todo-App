@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import '../styles/Todo.css'
 
 
 export default function Todo ({ todo,todos, setTodos }) {
+  const editRef = useRef(null);
+
+  useEffect(() => {
+    editRef.current.focus();
+  }, [todo.editing])
+  
   const handleDeleteTask = (e) => {
     e.preventDefault();
     const currentTodo = e.target.parentNode.parentNode;
@@ -50,8 +56,8 @@ export default function Todo ({ todo,todos, setTodos }) {
     let newTask = e.target.value;
     let todoTask = e.target.closest('.edit').previousElementSibling.children[0];
     todoTask.textContent = newTask;
-    
   }
+
 
   return (
     <div className="todo">
@@ -67,7 +73,7 @@ export default function Todo ({ todo,todos, setTodos }) {
       </div>
       <div className="edit" style={{display: `${todo.editing ? 'flex': 'none'}`}}>
         <form action="" onSubmit={handleSubmit} name="editForm">
-          <input onChange={handleInputChange} type="text" className="edit-input" defaultValue={todo.task} name="taskInput" maxLength="60"/>
+          <input ref={editRef} onChange={handleInputChange} type="text" className="edit-input" defaultValue={todo.task} name="taskInput" maxLength="60"/>
           <button type="submit" className="save-btn" name="save">Save</button>
         </form>
       </div>
