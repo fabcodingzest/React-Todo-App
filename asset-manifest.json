@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/fabcodingzest/React-Todo-App/static/css/main.e31aa496.chunk.css",
+    "main.js": "/fabcodingzest/React-Todo-App/static/js/main.d4b6cc15.chunk.js",
+    "main.js.map": "/fabcodingzest/React-Todo-App/static/js/main.d4b6cc15.chunk.js.map",
+    "runtime-main.js": "/fabcodingzest/React-Todo-App/static/js/runtime-main.94955675.js",
+    "runtime-main.js.map": "/fabcodingzest/React-Todo-App/static/js/runtime-main.94955675.js.map",
+    "static/js/2.78a02bfe.chunk.js": "/fabcodingzest/React-Todo-App/static/js/2.78a02bfe.chunk.js",
+    "static/js/2.78a02bfe.chunk.js.map": "/fabcodingzest/React-Todo-App/static/js/2.78a02bfe.chunk.js.map",
+    "index.html": "/fabcodingzest/React-Todo-App/index.html",
+    "precache-manifest.98bfdcd606878567dc45fa7f508951d0.js": "/fabcodingzest/React-Todo-App/precache-manifest.98bfdcd606878567dc45fa7f508951d0.js",
+    "service-worker.js": "/fabcodingzest/React-Todo-App/service-worker.js",
+    "static/css/main.e31aa496.chunk.css.map": "/fabcodingzest/React-Todo-App/static/css/main.e31aa496.chunk.css.map",
+    "static/js/2.78a02bfe.chunk.js.LICENSE.txt": "/fabcodingzest/React-Todo-App/static/js/2.78a02bfe.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.94955675.js",
+    "static/js/2.78a02bfe.chunk.js",
+    "static/css/main.e31aa496.chunk.css",
+    "static/js/main.d4b6cc15.chunk.js"
+  ]
+}
