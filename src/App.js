@@ -4,9 +4,9 @@ import AddTodo from './components/AddTodo'
 import TodoList from './components/TodoList'
 import './App.css';
 
-let todoObj = [{ task: "Go to hogwarts", id: uuid(), completed: false },
-  { task: "Pick up potions from Professor", id: uuid(), completed: true },
-  {task: "Meeting with Draco", id: uuid(), completed: false}]
+let todoObj = [{ task: "Go to hogwarts", id: uuid(), completed: false, editing: true },
+  { task: "Pick up potions from Professor", id: uuid(), completed: true, editing: false },
+  {task: "Meeting with Draco", id: uuid(), completed: false, editing: false}]
 
 function App () {
   const [todos, setTodos] = useState(JSON.parse(localStorage.getItem('todos')) || todoObj)

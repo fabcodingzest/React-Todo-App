@@ -7,7 +7,7 @@ export default function AddTodo ({ todos, setTodos }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (e.target.children[0].value.length > 0) {
-      setTodos([{ task: e.target.children[0].value, id: uuid(), completed: false }, ...todos]);
+      setTodos([{ task: e.target.children[0].value, id: uuid(), completed: false, editing: false }, ...todos]);
       e.target.reset();
     }
   }

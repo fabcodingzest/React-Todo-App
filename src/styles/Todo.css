@@ -1,16 +1,23 @@
+.non-edit {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.edit {
+  width: 100%;
+}
+
 .todo {
   width: 100%;
   background: #7883c2;
   margin-bottom: 2rem;
   padding: 1.4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border: 0.4rem solid #fff;
 }
 
 .actions {
-  width: 6rem;
+  min-width: 10rem;
   display: flex;
   justify-content: space-between;
 }
@@ -19,3 +26,31 @@
   cursor: pointer;
 }
 
+form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.4rem;
+}
+
+input[type=text] {
+  width: 80%;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+}
+
+.edit button[type=submit] {
+  width: 20%;
+  margin-left: 1rem;
+  padding: 1rem;
+  background: #34324a;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+}
