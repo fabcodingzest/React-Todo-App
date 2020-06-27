@@ -1,0 +1,21 @@
+.todo {
+  width: 100%;
+  background: #7883c2;
+  margin-bottom: 2rem;
+  padding: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.4rem solid #fff;
+}
+
+.actions {
+  width: 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions span {
+  cursor: pointer;
+}
+

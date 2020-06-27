@@ -1,6 +1,6 @@
 .AddTodo {
   width: 100vw;
-  padding: 2rem;
+  padding: 3rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,9 +25,16 @@
   font-size: 1.6rem;
   font-weight: bolder;
   outline: none;
-  background: #676E95;
+  background: #7883c2;
   color: #fff;
   margin-top: 1rem;
+  transition: .2s all ease-out;
+}
+
+.button:hover,
+.button:active {
+  background: #9da7dd;
+  transform: scale(1.05);
 }
 
 @media only screen and (min-width:45rem) {

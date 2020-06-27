@@ -7,8 +7,7 @@ export default function AddTodo ({ todos, setTodos }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (e.target.children[0].value.length > 0) {
-      setTodos([...todos, { task: e.target.children[0].value, id: uuid(), completed: false }])
-      localStorage.setItem('todos', JSON.stringify(todos))
+      setTodos([{ task: e.target.children[0].value, id: uuid(), completed: false }, ...todos]);
       e.target.reset();
     }
   }
