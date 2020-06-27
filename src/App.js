@@ -4,7 +4,7 @@ import AddTodo from './components/AddTodo'
 import TodoList from './components/TodoList'
 import './App.css';
 
-let todoObj = [{ task: "Go to hogwarts", id: uuid(), completed: false, editing: true },
+let todoObj = [{ task: "Go to hogwarts", id: uuid(), completed: false, editing: false },
   { task: "Pick up potions from Professor", id: uuid(), completed: true, editing: false },
   {task: "Meeting with Draco", id: uuid(), completed: false, editing: false}]
 
