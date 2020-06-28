@@ -18,7 +18,7 @@ export default function Todo ({ todo,todos, setTodos }) {
   }
   const handleCompleteTask = (e) => {
     e.preventDefault();
-    const newList = todos.filter(item => {
+    const newList = todos.map(item => {
       if (item.id === todo.id) {
         item.completed = !todo.completed;
       }
@@ -29,7 +29,7 @@ export default function Todo ({ todo,todos, setTodos }) {
 
   const handleEditTask = (e) => {
     e.preventDefault();
-    const newList = todos.filter(item => {
+    const newList = todos.map(item => {
       if (item.id === todo.id) {
         item.editing = !todo.editing;
       }
@@ -73,7 +73,7 @@ export default function Todo ({ todo,todos, setTodos }) {
       </div>
       <div className="edit" style={{display: `${todo.editing ? 'flex': 'none'}`}}>
         <form action="" onSubmit={handleSubmit} name="editForm">
-          <input ref={editRef} onChange={handleInputChange} type="text" className="edit-input" defaultValue={todo.task} name="taskInput" maxLength="60"/>
+          <input ref={editRef} onChange={handleInputChange} type="text" className="edit-input" defaultValue={todo.task} name="taskInput" maxLength="50" required/>
           <button type="submit" className="save-btn" name="save">Save</button>
         </form>
       </div>

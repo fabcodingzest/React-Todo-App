@@ -1,5 +1,5 @@
 .AddTodo {
-  width: 100vw;
+  width: 100%;
   padding: 3rem 2rem;
   display: flex;
   flex-direction: column;
